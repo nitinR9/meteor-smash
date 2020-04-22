@@ -1,5 +1,5 @@
 # Meteor Smash
-This is a made with phaser version 2.13.3 for [#WeeklyGameJam](https://itch.io/jam/weekly-game-jam-118) topic of game jam was 'spaceship'. Game hosted here [Meteor-Smash](https://splintercell9dev.itch.io/meteor-smash) This game is now no longer a prototype. Game instructions and controls are specified briefly as follows
+This is a made with phaser version 2.13.3 for [#WeeklyGameJam](https://itch.io/jam/weekly-game-jam-118) topic of game jam was 'spaceship'. Game hosted here [Meteor-Smash](https://splintercell9dev.itch.io/meteor-smash) this game is now no longer a prototype. Game instructions and controls are specified briefly as follows
 
 ### What's New ?
 
@@ -10,13 +10,13 @@ This is a made with phaser version 2.13.3 for [#WeeklyGameJam](https://itch.io/j
   - Score will be saved for one seesion only i.e on closing of browser tab previously recorded score will be removed.
 
 ### Controls
-   - Use &uarr; and &darr; keys to switch between weapons provided, default is at 1
+   - Use &uarr; and &darr; keys to switch between weapons provided, default is at 1.
    - Use &larr; and &rarr; keys to move spaceship in left and right direction.
-   - Use Spacebar key to fire your weapons.
+   - Use Spacebar key to fire your weapon.
 
 ### Instructions
    - Main goal is to make score as high as possible, if there is a new highscore then only it will be saved in browser session.
-   - There is a Rectangular panel that shows the current health, corepower and overload level of spaceship.
+   - There is a Rectangular panel that shows the current health, corepower,overload level and current weapon selected at spaceship.
    - Corepower(yellow bar) indicates energy level required to fire the wepon 2 and 3, if it's zero then those weapons cannot be fired.
    - Overload level(red bar initially empty) means every weapon causes strain towards machinery and increases heat level of the laser canons. If it's value is above 80% then you cannot fire weapon 2 and 3.
    - Also, if overload level reaches 100% it's momentarily decrease spaceship's health by 1HP. This parameter gradually decreases if weapon is not fired continously or can be lowered by absorbing meteor core [explained afterwards].
@@ -29,8 +29,8 @@ This is a made with phaser version 2.13.3 for [#WeeklyGameJam](https://itch.io/j
 There are 3 different types of weapons
    
    - Weapon 1: Uses no extra power but takes more than one hit to destroy meteors. 
-   - Weapon 2: Uses extra corepower which can be extracted through meteors, much better than first one but rate of fire is slow.
-   - Weapon 3: Uses all remaining corepower to destroy all meteors than come in it's way fast but increases overload level at much faster rate than weapon 1 & 2.
+   - Weapon 2: Uses extra corepower which can be extracted through meteors, much better than first at damage one but rate of fire is slow.
+   - Weapon 3: Uses all remaining corepower to destroy all meteors than come in it's way, fast but increases overload level at much faster rate than the other weapons.
  
 Table to show the effectiveness of weapons
 
@@ -42,12 +42,12 @@ Table to show the effectiveness of weapons
 
 ### Meteor Cores
 
-There are 5 different kinds of core that are available in meteors of which 3 are rarely present inside normal meteors and 2 of them frequent inside exploding meteors due to presence of highly unstable core.
+There are 5 different kinds of core that are available in meteors of which 3 are rarely present inside normal meteors and rest of 2 are frequent at occuring inside exploding meteors due to presence of highly unstable core.
 
 Normal Powerup Core
-   - Core 1: Green in colour and increase the health of spacesip
+   - Core 1: Green in colour and increase the health of spaceship
    - Core 2: Yellow in colour to refill corepower
-   - Core 3: Orange in colour and it reduces overload level by decresing high temperatures of the engine.
+   - Core 3: Orange in colour and it reduces overload level by decreasing high temperatures of the engine.
 
 Danger Powerup Core
    - Core 4: Red in colour, it directly reduces health
