@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Welcome to this Game</title>
-    <style>
-        *{
-            margin: 0 ;
-            padding: 0 ;
-        }
-        body{
-            background-color: black ;
-        }
-        canvas{
-            margin-left: auto ;
-            margin-right: auto;
-            
-        }
-    </style>
-    <script src="js/phaser.min.js"></script>
-    <script src="js/boot.js"></script>
-    <script src="js/loader.js"></script>
-    <script src="js/mainmenu.js"></script>
-    <script src="js/game.js"></script>
-    <script src="js/end.js"></script>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="css/fontloader.css">
+   <title>Meteor-Smash</title>
+   
+   <script src="js/phaser.min.js"></script>
+   <script src="js/boot.js"></script>
+   <script src="js/loader.js"></script>
+   <script src="js/mainmenu.js"></script>
+   <script src="js/game.js"></script>
+   <script src="js/gameover.js"></script>
+   
+   <style>
+      body{
+         background-color: black ;
+      }
+      * {
+         margin: 0px ;
+         padding: 0px ;
+      }
+      canvas{
+         margin-left: auto;
+         margin-right: auto ;
+      }
+   </style>
+   
 </head>
 <body>
-    <div id="invisible">
-        <span style="font-family: consolas; color: #fff">hello</span>
-    </div>
+   <script src="js/canvas.js">
+   </script>
+   <div id="invisible" style="color: #fff ;">
+      <span style="font-family: 'arcade'">.</span>
+      <span style="font-family: 'minecraft'">.</span>
+      <span style="font-family: 'webpixelbitmap'">.</span>
+   </div>
 </body>
-<script src="js/canvas.js"></script>
 </html>
