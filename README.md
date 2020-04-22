@@ -1,5 +1,5 @@
 # Meteor Smash
-This is a made with phaser version 2.13.3 for [#WeeklyGameJam](https://itch.io/jam/weekly-game-jam-118) topic of game jam was 'spaceship'. Game hosted here [Meteor-Smash]() This game is now no longer a prototype. Game instructions and controls are specified briefly as follows
+This is a made with phaser version 2.13.3 for [#WeeklyGameJam](https://itch.io/jam/weekly-game-jam-118) topic of game jam was 'spaceship'. Game hosted here [Meteor-Smash](https://splintercell9dev.itch.io/meteor-smash) This game is now no longer a prototype. Game instructions and controls are specified briefly as follows
 
 ### What's New ?
 
@@ -17,8 +17,8 @@ This is a made with phaser version 2.13.3 for [#WeeklyGameJam](https://itch.io/j
 ### Instructions
    - Main goal is to make score as high as possible, if there is a new highscore then only it will be saved in browser session.
    - There is a Rectangular panel that shows the current health, corepower and overload level of spaceship.
-   - Corepower indicates energy level required to fire the wepon 2 and 3, if it's zero then those weapons cannot be fired.
-   - Overload level means every weapon causes strain towards machinery and increases heat level of the laser canons. If it's value is above 80% then you cannot fire weapon 2 and 3.
+   - Corepower(yellow bar) indicates energy level required to fire the wepon 2 and 3, if it's zero then those weapons cannot be fired.
+   - Overload level(red bar initially empty) means every weapon causes strain towards machinery and increases heat level of the laser canons. If it's value is above 80% then you cannot fire weapon 2 and 3.
    - Also, if overload level reaches 100% it's momentarily decrease spaceship's health by 1HP. This parameter gradually decreases if weapon is not fired continously or can be lowered by absorbing meteor core [explained afterwards].
    - If meteor hits the lasers fired by spaceship and it explodes then only score value will increase, as some of the meteors are tough and cannot be destroyed in one shot.
    - Your mission is make path through those boulders by destroying them.
