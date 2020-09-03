@@ -2,6 +2,11 @@ const {app, BrowserWindow, ipcMain, dialog} = require('electron') ;
 const path = require('path') ;
 let win ;
 
+let gotSingleInstanceAccess = app.requestSingleInstanceLock() ;
+
+if(!gotSingleInstanceAccess){
+   app.quit() ;
+}
 
 function createWindow(){
    win = new BrowserWindow({
@@ -37,7 +42,6 @@ function createWindow(){
       win.loadFile(path.join(__dirname+'/src/index.html')) ;
    })
 
-   win.webContents.openDevTools({mode: "detach"}) ;
 }
 
 app.on('ready', createWindow) ;
