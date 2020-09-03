@@ -1,0 +1,15 @@
+@font-face{
+   font-family: 'arcade' ;
+   src: url('fonts/arcadeclassic.otf') ;
+}
+
+@font-face{
+   font-family: 'minecraft' ;
+   src: url('fonts/MinecraftEvenings.otf') ;
+}
+
+@font-face{
+   font-family: 'webpixelbitmap' ;
+   src: url('fonts/webpixelbitmap_bold.otf') ;
+   color: rgb(234, 251, 79) ;
+}

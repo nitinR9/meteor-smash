@@ -3,11 +3,8 @@ This is a made with phaser version 2.13.3 for [#WeeklyGameJam](https://itch.io/j
 
 ### What's New ?
 
-  - Two different kinds of meteors available in 3 different sizes.
-  - Three different Weapons
-  - Totally new 3 kinds of Powerups to help player to last long in arcade
-  - New sounds and SFX
-  - Score will be saved for one seesion only i.e on closing of browser tab previously recorded score will be removed.
+  - Added Electron Support to play on Windows 10 devices
+  - Install all packages via `npm install` then run `npm run dist` to make a executable packaged version of game.
 
 ### Controls
    - Use &uarr; and &darr; keys to switch between weapons provided, default is at 1.

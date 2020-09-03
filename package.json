@@ -1,0 +1,26 @@
+{
+  "name": "meteor-smash",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^10.1.1",
+    "electron-builder": "^22.8.0"
+  },
+  "build": {
+    "appId": "com.splintercell9.meteorsmash",
+    "win": {
+      "target": "nsis",
+      "icon": "build/icons/win/icon.ico"
+    }
+  }
+}
