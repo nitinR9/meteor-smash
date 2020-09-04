@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "dist": "electron-builder"
+    "package": "electron-builder"
   },
   "keywords": [],
   "author": "",
@@ -19,8 +19,10 @@
   "build": {
     "appId": "com.splintercell9.meteorsmash",
     "win": {
-      "target": "nsis",
       "icon": "build/icons/win/icon.ico"
+    },
+    "mac": {
+      "icon": "build/icons/mac/icon.icns"
     }
   }
 }
