@@ -9,7 +9,6 @@ if(!gotSingleInstanceAccess){
 }
 
 function createWindow(){
-   win = null ;
    win = new BrowserWindow({
       width: 800,
       height: 625,
@@ -30,6 +29,10 @@ function createWindow(){
       win.show() ;
    }) ;
 
+   win.on('close', () => {
+      win = null ;
+   }) ;
+
    win.webContents.on('did-fail-load', () => {
       win.loadFile(path.join(__dirname+'/src/index.html')) ;
    })
@@ -44,7 +47,7 @@ app.on('window-all-closed', () => {
 }) ;
 
 app.on('activate', () => {
-   if (BrowserWindow.getAllWindows().length === 0){
+   if (win === null){
       createWindow() ;
    }
 }) ;
