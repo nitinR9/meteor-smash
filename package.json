@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "package": "electron-builder"
+    "pacwin": "electron-builder --win",
+    "paclinux": "electron-builder --linux",
+    "pacallonmac": "electron-builder -mwl"
   },
   "keywords": [],
   "author": "",

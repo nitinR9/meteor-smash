@@ -1,5 +1,2 @@
-build/icons/mac
-build/icons/png
 dist
 node_modules
-src/assets
