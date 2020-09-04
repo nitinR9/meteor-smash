@@ -9,19 +9,17 @@ if(!gotSingleInstanceAccess){
 }
 
 function createWindow(){
+   win = null ;
    win = new BrowserWindow({
       width: 800,
       height: 625,
-      webPreferences: {
-         nodeIntegration: true
-      },
-      show: true,
+      show: false,
       center: true,
       resizable: false,
       fullscreenable: false,
       maximizable: false,
       title: 'Meteor Smash',
-      backgroundColor: '#000000',
+      backgroundColor: '#000',
    }) ;
 
    win.setMenuBarVisibility(false) ;
@@ -29,31 +27,24 @@ function createWindow(){
    win.loadFile(path.join(__dirname+'/src/index.html')) ;
 
    win.on('ready-to-show', () => {
-      setTimeout(() => {
-         win.show() ;
-      }, 5500) ;
+      win.show() ;
    }) ;
-
-   win.on('close', () => {
-      win = null ;
-   })
 
    win.webContents.on('did-fail-load', () => {
       win.loadFile(path.join(__dirname+'/src/index.html')) ;
    })
-
 }
 
-app.on('ready', createWindow) ;
+app.whenReady().then(createWindow)
 
 app.on('window-all-closed', () => {
-   if (process.platform === 'darwin'){
+   if (process.platform !== 'darwin'){
       app.quit() ;
    }
 }) ;
 
 app.on('activate', () => {
-   if (win === null){
+   if (BrowserWindow.getAllWindows().length === 0){
       createWindow() ;
    }
 }) ;
