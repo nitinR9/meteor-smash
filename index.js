@@ -15,6 +15,9 @@ function createWindow(){
       show: false,
       center: true,
       resizable: false,
+      webPreferences: {
+         devTools: false
+      },
       fullscreenable: false,
       maximizable: false,
       title: 'Meteor Smash',
