@@ -18,7 +18,6 @@ function createWindow(){
       webPreferences: {
          devTools: false
       },
-      fullscreenable: false,
       maximizable: false,
       title: 'Meteor Smash',
       backgroundColor: '#000',
