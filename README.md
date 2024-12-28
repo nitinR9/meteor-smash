@@ -1,5 +1,5 @@
 # Meteor Smash
-This is a made with phaser version 2.13.3 for [#WeeklyGameJam](https://itch.io/jam/weekly-game-jam-118) topic of game jam was 'spaceship'. Game hosted here [Meteor-Smash](https://splintercell9dev.itch.io/meteor-smash) this game is now no longer a prototype. Game instructions and controls are specified briefly as follows
+This is a made with phaser version 2.13.3 for [#WeeklyGameJam](https://itch.io/jam/weekly-game-jam-118) topic of game jam was 'spaceship'. Game hosted here [Meteor-Smash](https://nitinr9.itch.io/meteor-smash) this game is now no longer a prototype. Game instructions and controls are specified briefly as follows
 
 ### What's New ?
 
